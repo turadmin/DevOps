@@ -6,6 +6,7 @@ pipeline {
             steps {
                 sh "cd /home/tur/DevOps/Jenkins"
                 sh "docker build -t 336869890/hwtura ."
+                sh "docker login"
                 sh "docker push 336869890/hwtura"
                 
 
