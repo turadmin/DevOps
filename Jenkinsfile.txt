@@ -5,8 +5,8 @@ pipeline {
         stage('Hello') {
             steps {
                 sh "cd /home/tur/DevOps/Jenkins"
-                sh "sudo -S docker build -t 336869890/hwtura ."
-                sh "sudo -S docker push 336869890/hwtura"
+                sh "docker build -t 336869890/hwtura ."
+                sh "docker push 336869890/hwtura"
                 
 
 
